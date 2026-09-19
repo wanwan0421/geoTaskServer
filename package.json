@@ -1,0 +1,45 @@
+{
+  "name": "geomodeltaskserver",
+  "version": "0.3.0",
+  "private": true,
+  "scripts": {
+    "start": "node ./bin/www",
+    "migrate:unique-server-ip": "node ./scripts/dedupe-server-ips.js",
+    "prewarm:llm-policies": "node ./scripts/prewarm-llm-policies.js",
+    "test:scheduling": "node ./scripts/test-scheduling-repair.js",
+    "test:runtime-prediction": "node ./scripts/test-runtime-prediction.js",
+    "test:experiment-trace": "python ./scripts/test-experiment-trace.py"
+  },
+  "bin": "bin/www",
+  "pkg": {
+    "assets": [
+      "public/**/*",
+      "views/**/*",
+      "static/workloads/**/*"
+    ]
+  },
+  "dependencies": {
+    "@sinclair/typebox": "^0.34.41",
+    "bluebird": "^3.7.2",
+    "cookie-parser": "^1.4.6",
+    "debug": "~2.6.9",
+    "ejs": "^2.6.1",
+    "express": "~4.16.0",
+    "formidable": "^1.2.6",
+    "http-errors": "~1.6.2",
+    "modelservicesdk": "^2.0.2",
+    "mongoose": "^5.13.22",
+    "morgan": "^1.9.1",
+    "node-schedule": "^1.3.3",
+    "openai": "^5.20.1",
+    "request": "^2.88.2",
+    "request-promise": "^4.2.4",
+    "saslprep": "^1.0.3",
+    "undici": "^6.21.3",
+    "uuid": "^3.3.2",
+    "zod": "^3.25.76"
+  },
+  "devDependencies": {
+    "pkg": "^5.8.1"
+  }
+}

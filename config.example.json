@@ -1,0 +1,10 @@
+{
+  "mongodb": {
+    "name": "GeoTaskServerDB",
+    "host": "127.0.0.1",
+    "port": "27017",
+    "username": "CHANGE_ME",
+    "password": "CHANGE_ME",
+    "authSource": "admin"
+  }
+}
