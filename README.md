@@ -32,3 +32,13 @@ npm run test:runtime-prediction
 npm run test:experiment-trace
 ```
 
+## Licensing
+
+- Software source code is licensed under the MIT License. See [`LICENSE`](LICENSE).
+- LLM prompts, documentation, sample configurations, test fixtures, and other
+  non-software research materials are licensed under the Creative Commons
+  Attribution 4.0 International License (CC BY 4.0). See
+  [`LICENSE-DATA.md`](LICENSE-DATA.md).
+- Third-party models, datasets, libraries, and other external materials remain
+  subject to their original licenses and terms of use.
+
